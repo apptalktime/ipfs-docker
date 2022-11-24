@@ -22,7 +22,12 @@ services:
       
       # HTTP Gateway
       - 127.0.0.1:8080:8080
+    networks:
+      - captain-overlay-network
 volumes:
   ipfs_path:
   ipfs_fuse:
   ipns_fuse:
+networks:
+  captain-overlay-network:
+    external: true
