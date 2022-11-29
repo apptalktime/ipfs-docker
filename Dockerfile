@@ -1,4 +1,4 @@
-FROM ipfs/kubo:latest
+FROM ipfs/kubo:v0.16.0
 
 ENV DEBIAN_FRONTEND noninteractive
 
